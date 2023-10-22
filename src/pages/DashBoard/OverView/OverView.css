@@ -1,0 +1,215 @@
+#submitted {
+    width: 150px;
+    height: 110px;
+    background-color: #7A4CFC;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 0px #00000021;
+}
+
+#submiited-number {
+    font-size: 40px;
+    font-weight: 400px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.submit-text {
+    font-size: 14px;
+    font-weight: 300px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+#post {
+    width: 150px;
+    height: 110px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 2px #0000000A;
+}
+
+#post-number {
+    font-size: 40px;
+    font-weight: 700;
+    color: #575757;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#post-text {
+    font-size: 14px;
+    font-weight: 400px;
+    margin-left: 20px;
+}
+
+#profile {
+    width: 150px;
+    height: 110px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 2px #0000000A;
+}
+
+#profile-number {
+    font-size: 40px;
+    font-weight: 700;
+    color: #575757;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#profile-text {
+    font-size: 14px;
+    font-weight: 400px;
+    margin-left: 20px;
+}
+
+#input-questions {
+    width: 500px;
+    height: 70px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px 2px #0000000A;
+}
+
+#questions-text {
+    font-size: 20px;
+    font-weight: 400px;
+    color: #000000;
+    padding-top: 50px;
+    margin-left: 20px;
+}
+
+#flutter {
+    width: 500px;
+    height: 290px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px 2px #0000000A;
+
+}
+
+#flutter-text {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.paragraph-text {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 300px;
+    color: #797979;
+
+}
+
+#view {
+    width: 150px;
+    height: 40px;
+    background: #3A3A3A;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#comments {
+    font-size: 14px;
+    font-weight: 300px;
+    color: #FFFFFF;
+}
+
+#edit {
+    width: 150px;
+    height: 40px;
+    background-color: #7A4CFC;
+    /* background: #3A3A3A; */
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#quiz {
+    font-size: 14px;
+    font-weight: 300px;
+    color: #FFFFFF;
+}
+
+/* right_side */
+
+
+#right_side {
+    width: 300px;
+    height: 650px;
+    top: 218px;
+    left: 963px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px 2px #0000000A;
+}
+
+.biodata {
+    margin-left: 130px;
+}
+
+#image {
+    width: 89px;
+    height: 89px;
+    background: #D9D9D9;
+    border-radius: 50%;
+}
+
+#image-text {
+    font-size: 15px;
+    font-weight: 500px;
+    color: #000000;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+
+#cse {
+    font-size: 14px;
+    font-weight: 300px;
+}
+
+.activities {
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 500px;
+    color: #101010;
+
+}
+
+#seeAll {
+    font-size: 14px;
+    font-weight: 400px;
+    color: #3F08DD;
+    margin-left: 60px;
+}
+
+.question_submit {
+    margin-left: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 230px;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px 2px #0000000A;
+}
+
+#question-imge {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #00CEAA;
+    background: #AEEDE2;
+    border-radius: 20px;
+}
+
+#questionSubmit-imge {
+    width: 30px;
+    height: 30px;
+    background: #FFC48E;
+    border-radius: 20px;
+    border: 2px solid #FFC48E;
+}

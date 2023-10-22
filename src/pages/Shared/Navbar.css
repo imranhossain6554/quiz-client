@@ -1,0 +1,21 @@
+.title_text {
+    color: black;
+    font-weight: 700;
+}
+
+.home_text {
+    color: black;
+    font-weight: 700;
+}
+
+.signUp {
+    color: white;
+    text-decoration: none;
+    background: rgb(48, 48, 52);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 45px;
+    box-shadow: 0 0.5rem 1rem rgba(36, 40, 91, .15);
+}

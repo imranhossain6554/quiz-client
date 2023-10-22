@@ -1,0 +1,105 @@
+#quizview {
+    margin-top: 20px;
+    margin-left: 440px;
+    font-size: 20px;
+    font-weight: 500px;
+    color: #000000;
+}
+
+.quiz-view-description {
+    width: 710px;
+    height: 248px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px 2px #0000000A;
+}
+
+.quiz-view-heading {
+    margin-left: 25px;
+    padding-top: 20px;
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
+
+.quiz-view-text {
+    margin-left: 15px;
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #535353;
+}
+
+/* quiz option start */
+
+.quiz-option {
+    margin-left: 20px;
+}
+
+#google {
+
+    margin-left: 17px !important;
+}
+
+#google-radio {
+    background-color: red;
+}
+
+#google-color {
+    color: red;
+}
+
+#microsoft-color {
+    color: #A9FF74 !important;
+    border-bottom: 2px solid #A9FF74 !important;
+}
+
+#microsoft-radio {
+    background-color: #A9FF74 !important;
+}
+
+#dart {
+    margin-left: 46px !important;
+}
+
+#go {
+    margin-left: 52px !important;
+}
+
+#four {
+    margin-left: 76px !important;
+}
+
+#eight {
+    margin-left: 74px !important;
+}
+
+#recompilation {
+    margin-left: 30px !important;
+}
+
+#current {
+    margin-left: 37px !important;
+
+}
+
+#firebase-database {
+    margin-left: 25px !important;
+}
+
+#widget-tests {
+    margin-left: 72px !important;
+}
+
+#keys {
+    margin-left: 28px !important;
+}
+
+/* quiz option end */

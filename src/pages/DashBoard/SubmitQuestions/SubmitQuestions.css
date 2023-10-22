@@ -1,0 +1,166 @@
+#text-submit {
+    font-weight: 500;
+    color: #000000;
+}
+
+.text-submit {
+    border-bottom: 2px solid red;
+    width: 105px;
+}
+
+
+
+/* input title start */
+.input-title {
+    width: 100%;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #EFF1F999;
+    padding: 8px 16px 8px 16px;
+}
+
+/* input title end */
+.input-text {
+    color: #5E6366;
+    font-size: 15px;
+}
+
+.input-field {
+    width: 470px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #EFF1F999;
+    padding: 8px 16px 8px 16px;
+
+}
+
+.input-subject {
+    width: 100%;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #EFF1F999;
+    padding: 8px 16px 8px 16px;
+}
+
+.input-lastName {
+    width: 100%;
+    height: 179px;
+    padding-bottom: 120px;
+    /* padding: 17px 1028px 143px 0px; */
+    border-radius: 8px;
+    background-color: #EFF1F999;
+
+}
+
+/* #option {
+    width: 20px;
+    height: 20px;
+    top: 22.14px;
+    left: 558px;
+    rotate: 45 deg;
+} */
+
+#multiple-text {
+    font-size: 20px;
+    color: #5E6366;
+    font-weight: 400;
+}
+
+.option {
+    width: 370px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #EFF1F999;
+
+}
+
+.text-option {
+    margin-top: 10px;
+    margin-left: 10px;
+    background: #7A4CFC;
+}
+
+#circle {
+
+    border: 2px solid #7A4CFC;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#text-circle {
+    color: #7A4CFC;
+}
+
+.text_file {
+    color: #5E6366;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+.file_upload {
+    width: 570px;
+    height: 205px;
+    border-radius: 10px;
+    border: 1px solid;
+    border: dotted #5E6366;
+    background: #FFFFFF;
+    margin-left: 30px;
+    text-align: center;
+}
+
+#file-drop {
+    padding-top: 40px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400px;
+}
+
+#file-size {
+    font-size: 12px;
+    font-weight: 400;
+    color: #00000066;
+}
+
+.file_button {
+    border: 1px solid #0F91D2B2;
+    border-radius: 5px;
+    padding: 12px 16px 12px 16px;
+}
+
+.file_submit {
+    width: 190px;
+    height: 50px;
+    background: #000000;
+    color: #FFFFFF;
+    padding: 14px 13px 14px 13px;
+    border-radius: 10px;
+    margin-left: 785px;
+}
+
+/* add category start */
+#addCategory {
+    width: 175px;
+    height: 38px;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-left: 30px;
+    background: linear-gradient(0deg, rgba(239, 241, 249, 0.6), rgba(239, 241, 249, 0.6)),
+        linear-gradient(0deg, #94A5FF, #94A5FF);
+    border: 1px solid #94A5FF
+}
+
+
+#plus {
+    width: 64px;
+    height: 38px;
+    border-radius: 8px;
+    color: white;
+    background: #94A5FF;
+    margin-left: 30px;
+    border: 1px solid #94A5FF;
+
+
+}
+
+/* add category end */
