@@ -11,8 +11,11 @@ import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 
 import ErrorPage from "../componets/ErrorPage/ErrorPage";
+import OverView from "../pages/DashBoard/OverView/OverView";
 import QuizView from "../pages/DashBoard/QuizView/QuizView";
 import QuizViewDescription from "../pages/DashBoard/QuizViewDescription/QuizViewDescription";
+import CreateCategorey from "../pages/DashBoard/createCategoreyAndQuiz/CreateCategorey";
+import CreateQuiz from "../pages/DashBoard/createCategoreyAndQuiz/CreateQuiz";
 import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
@@ -72,11 +75,19 @@ export const router = createBrowserRouter([
       </PrivateRoute>
     ),
 
-    // children: [
-    //     {
-    //         path: '/submitquestions',
-    //         element: <SubmitQuestions />
-    //     }
-    // ]
+    children: [
+      {
+        path: "/dashboard",
+        element: <OverView />,
+      },
+      {
+        path: "/dashboard/create-categorey",
+        element: <CreateCategorey />,
+      },
+      {
+        path: "/dashboard/create-quiz",
+        element: <CreateQuiz />,
+      },
+    ],
   },
 ]);

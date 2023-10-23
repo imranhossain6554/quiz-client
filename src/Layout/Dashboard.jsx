@@ -1,24 +1,22 @@
-import React from 'react';
-import Sidebar from '../pages/DashBoard/Sidebar/Sidebar';
-import Navbar from '../pages/Shared/Navbar';
-import { Outlet } from 'react-router-dom';
-import Footer from '../pages/Shared/Footer';
-
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Sidebar from "../pages/DashBoard/Sidebar/Sidebar";
+import "./Dashboard.css";
 const Dashboard = () => {
-    return (
-        <>
-            <Navbar />
-            <Outlet />
-            <div className="container">
-                <div className="row">
-                    <Sidebar />
-
-                </div>
-            </div>
-            <Footer />
-
-        </>
-    );
+  return (
+    <>
+      <div className="container">
+        <div class="row">
+          <div class="col-md-6">
+            <Sidebar />
+          </div>
+          <div class="col-md-6">
+            <Outlet></Outlet>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Dashboard;
