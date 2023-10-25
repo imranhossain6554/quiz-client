@@ -16,20 +16,22 @@ const CreateCategorey = () => {
       url: `${process.env.REACT_APP_API}/api/quizcategory/create`,
       headers: {
         "content-type": "application/json",
-        access_token: `${getCookie("token")}`,
+        Authorization: `Bearer ${getCookie("token")}`,
       },
-      data: { categoreyText },
+      data: { title: categoreyText },
     })
-      .then((response) => response.json())
+      //.then((response) => response.json())
       .then((response) => {
-        console.log("SIGNIN SUCCESS", response);
         if (response.data) {
-          e.target.reset();
+          setCategoreyText("");
+          console.log("SIGNIN SUCCESS", response);
+          //e.target.reset();
         }
       })
       .catch((error) => {
-        setError(error.response.data.error);
-        console.log("SIGN IN ERROR", error.response.data);
+        //setError(error.response.data);
+        console.log(" ERROR", error);
+        console.log(" ERROR data", error.response);
         // setValues({ ...values, buttonText: 'Submit' });
         //setAuthError(error.response.data.error);
       });

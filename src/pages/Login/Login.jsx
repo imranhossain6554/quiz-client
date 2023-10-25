@@ -32,7 +32,7 @@ const Login = () => {
         const destination = location?.state?.from || "/";
         navigate(location?.state?.from || "/", { replace: true });
         setError("");
-        authenticate(response.data, () => {
+        authenticate(response, () => {
           setUser(isAuth());
           setIsLoading(false);
           navigate("/dashboard", { replace: true });
@@ -40,8 +40,8 @@ const Login = () => {
         });
       })
       .catch((error) => {
-        setError(error.response.data.error);
-        console.log("SIGN IN ERROR", error.response.data);
+        //setError(error.response.data.error);
+        console.log("SIGN IN ERROR", error);
         // setValues({ ...values, buttonText: 'Submit' });
         //setAuthError(error.response.data.error);
       });

@@ -14,6 +14,7 @@ import ErrorPage from "../componets/ErrorPage/ErrorPage";
 import OverView from "../pages/DashBoard/OverView/OverView";
 import QuizView from "../pages/DashBoard/QuizView/QuizView";
 import QuizViewDescription from "../pages/DashBoard/QuizViewDescription/QuizViewDescription";
+
 import CreateCategorey from "../pages/DashBoard/createCategoreyAndQuiz/CreateCategorey";
 import CreateQuiz from "../pages/DashBoard/createCategoreyAndQuiz/CreateQuiz";
 import PrivateRoute from "./PrivateRoute";
