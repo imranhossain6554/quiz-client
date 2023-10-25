@@ -2,15 +2,17 @@ import axios from "axios";
 import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { getCookie } from "../../../utilities/helper.js";
 import "../SubmitQuestions/SubmitQuestions.css";
 const CreateCategorey = () => {
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const [categoreyText, setCategoreyText] = useState([]);
+  const showToastMessage = () => {
+    toast.success("categorey created successfully!");
+  };
   const submitCategorey = () => {
-    console.log("Sending", categoreyText);
-
     axios({
       method: "POST",
       url: `${process.env.REACT_APP_API}/api/quizcategory/create`,
@@ -24,14 +26,15 @@ const CreateCategorey = () => {
       .then((response) => {
         if (response.data) {
           setCategoreyText("");
+          showToastMessage();
           console.log("SIGNIN SUCCESS", response);
           //e.target.reset();
         }
       })
       .catch((error) => {
-        //setError(error.response.data);
-        console.log(" ERROR", error);
-        console.log(" ERROR data", error.response);
+        setError(error.response.data);
+        //console.log(" ERROR", error);
+        //console.log(" ERROR data", error.response);
         // setValues({ ...values, buttonText: 'Submit' });
         //setAuthError(error.response.data.error);
       });
