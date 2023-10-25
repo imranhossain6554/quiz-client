@@ -11,6 +11,7 @@ const CreateQuiz = () => {
   const showToastMessage = () => {
     toast.success("data save successfully!");
   };
+  const [error, setError] = useState("");
   const navigate = useNavigate();
   const [categoreyListData, setCategoreyListData] = useState([]);
   const [checkListData, setCheckListData] = useState([]);
@@ -25,8 +26,6 @@ const CreateQuiz = () => {
       .then((response) => response.json())
       .then((data) => setCategoreyListData(data));
   }, []);
-
-  console.log("cc", categoreyListData);
 
   //taking input
   const [quizCreateData, setQuizCreateData] = useState([]);

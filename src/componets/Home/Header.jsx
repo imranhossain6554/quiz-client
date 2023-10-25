@@ -13,7 +13,7 @@ const Header = () => {
   const navigate = useNavigate();
   const navigateToqustion = () => {
     // 👇️ navigate to /
-    navigate("submitquestions");
+    navigate("/quizviewdescription");
   };
   return (
     <>
