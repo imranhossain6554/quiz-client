@@ -1,4 +1,6 @@
 import axios from "axios";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useNavigate } from "react-router-dom";
@@ -8,11 +10,13 @@ import "./SignUp.css";
 
 const SignUp = () => {
   const navigate = useNavigate();
-
+  const [errorMessage, setErrorMessage] = useState("");
   const { user, setUser, isLoading, setIsLoading, setAuthError, authError } =
     useAuth();
   const [registerData, setRegisterData] = useState({});
-
+  const showToastMessage = () => {
+    toast.error(errorMessage);
+  };
   const handelOnBlur = (e) => {
     const field = e.target.name;
     const value = e.target.value;
@@ -23,7 +27,7 @@ const SignUp = () => {
   };
 
   //renter registration system
-  const [errorMessage, setErrorMessage] = useState("");
+ 
   const handelRegisterRenterSubmit = (event) => {
     event.preventDefault();
     console.log("registerData ", registerData);
@@ -50,7 +54,8 @@ const SignUp = () => {
       })
       .catch((error) => {
         console.log("SIGNUP ERROR", error.response.data);
-        setErrorMessage(error.response.data.error);
+        showToastMessage()
+        setErrorMessage(error.response.data.Message);
       });
   };
   return (
@@ -58,21 +63,22 @@ const SignUp = () => {
       <Helmet>
         <title>Happy Students - SignUp</title>
       </Helmet>
+      <ToastContainer />
       <section className="py-4 py-md-5 my-5">
         <div className="container py-md-5">
           <div className="row">
             <div className="col-md-6 text-center">
               <img src={signup} className="img-fluid w-100" alt="" />
             </div>
-            {/* end  auth error message show */}
-            {errorMessage && (
+          
+          {/*   {errorMessage && (
               <div
                 className="alert alert-danger justify-content-center"
                 role="alert"
               >
                 {errorMessage}
               </div>
-            )}
+            )} */}
             <div className="col-md-5 col-xl-4 text-center text-md-start">
               <h2 className="display-6 fw-bold mb-5">
                 <span className=" pb-1">

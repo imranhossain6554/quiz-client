@@ -1,5 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import { Helmet } from "react-helmet-async";
 import { useLocation, useNavigate } from "react-router-dom";
 import login from "../../assets/img/illustrations/login.svg";
@@ -16,7 +18,9 @@ const Login = () => {
   console.log("lo", location);
   const { user, setUser, isLoading, setIsLoading, setAuthError, authError } =
     useAuth();
-
+    const showToastMessage = () => {
+      toast.error(error);
+    };
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
@@ -42,8 +46,8 @@ const Login = () => {
       .catch((error) => {
         //setError(error.response.data.error);
         console.log("SIGN IN ERROR", error);
-        // setValues({ ...values, buttonText: 'Submit' });
-        //setAuthError(error.response.data.error);
+        showToastMessage()
+        setError(error.response.data.Message);
       });
   };
 
@@ -81,7 +85,7 @@ const Login = () => {
       <Helmet>
         <title>Happy Students - Login</title>
       </Helmet>
-
+      <ToastContainer />
       <section className="py-4 py-md-5 my-5">
         <div className="container py-md-5">
           <div className="row">

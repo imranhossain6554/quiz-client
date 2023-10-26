@@ -12,6 +12,9 @@ const CreateCategorey = () => {
   const showToastMessage = () => {
     toast.success("categorey created successfully!");
   };
+  const showErroMessage = () => {
+    toast.error(error);
+  };
   const submitCategorey = () => {
     axios({
       method: "POST",
@@ -32,8 +35,9 @@ const CreateCategorey = () => {
         }
       })
       .catch((error) => {
-        setError(error.response.data);
-        //console.log(" ERROR", error);
+        setError(error.response.data.Message);
+        showErroMessage()
+        console.log(" ERROR", error);
         //console.log(" ERROR data", error.response);
         // setValues({ ...values, buttonText: 'Submit' });
         //setAuthError(error.response.data.error);
