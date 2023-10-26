@@ -66,9 +66,9 @@ const Navbar = () => {
                 <NavLink
                   className="nav-link  fs-6"
                   activeClassName="active"
-                  to="/faq"
+                  to="/quizview"
                 >
-                  FAQ
+                  Quizes
                 </NavLink>
               </li>
               <li className="nav-item">
